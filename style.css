@@ -7,8 +7,8 @@
   --bluesky: #73a3da;
   --purplesky: #6e62da;
   --pinksky: #292b91;
-  --deepsky: #2eb8e2;
-  --lightletter: #bcceff;
+  --deepsky: #3fccd6;
+  --lightletter: #6b7db3;
   --darkletter: #021a35;
 }
 
@@ -115,20 +115,6 @@ h1 {
   margin: 0 13px 0 13px;
 }
 
-.tit2 {
-  margin: 20px 20px 0 20px;
-  padding-top: 10px;
-  text-align: center;
-  font-size: 60px;
-  font-weight: bold;
-  background: var(--darkletter);
-  border-radius: 15px 15px 0px 0px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  color: var(--lightletter);
-  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);  
-}
-
 /* CSS Temas */
 
 .imgs {
@@ -145,7 +131,8 @@ h1 {
   margin: 0 20px 30px 20px;
   padding: 15px;
   background: var(--darkletter);
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
 }
@@ -153,7 +140,7 @@ h1 {
 .container {
   display: flex;
   padding: 20px;
-  margin: 0 20px 20px 20px;
+  margin: 20px;
   background: var(--lightletter);
   border-radius: 15px;
   align-items: center;
