@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+  --bluesky: #73a3da;
+  --purplesky: #6e62da;
+  --pinksky: #292b91;
+  --deepsky: #2eb8e2;
+  --lightletter: #bcceff;
+  --darkletter: #021a35;
+}
+
+body {
+    background: #2456c2;
+    color: #111c2b;
+    width: 100%;
+    max-height: 100vh;
+    font-family: 'Poiret One', cursive;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.icon:hover {
+  opacity: 0.2;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 20px;
+  background: #021a35;
+}
+
+.header::before, .header::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(90deg, #2eb8e2, #0fe682, #db39d3, #2eb8e2);
+  width: calc(100% + 5px); 
+  height: calc(100% + 5px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+  background-size: 200%;
+  border-radius: 15px;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.header::after {
+  filter: blur(10px);
+}
+
+.perfil {
+  border-radius: 50%;
+  width: 250px;
+  z-index: 1;
+  border: 5px solid var(--deepsky);
+}
+
+h1 {
+  font-size: 60px;
+  color: var(--darkletter);
+}
+
+.conhecendo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 60%;
+  font-size: 40px;
+  background-image: url(back3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  color: var(--darkletter);
+}
+
+.descricao a:hover {
+  color: #e69549;
+}
+
+.descricao {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 13px 0 13px;
+}
+
+.tit2 {
+  margin: 20px 20px 0 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  background: var(--darkletter);
+  border-radius: 15px 15px 0px 0px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--lightletter);
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);  
+}
+
+/* CSS Temas */
+
+.imgs {
+  width: 300px ;
+  height: 300px ;
+  border-radius: 15px; 
+  margin-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.body2 {
+  margin: 0 20px 30px 20px;
+  padding: 15px;
+  background: var(--darkletter);
+  border-radius: 0 0 15px 15px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  margin: 0 20px 20px 20px;
+  background: var(--lightletter);
+  border-radius: 15px;
+  align-items: center;
+}
+
+.content {
+  font-size: 2.05em;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-left: 10px;
+  font-family: 'Sora', sans-serif;
+}
+
+.content p {
+  padding-bottom: 10px;
+}
+
+.content b {
+  color: var(--deepsky);
+}
+
+.content h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--darkletter);
+}
+
+.content a:hover {
+  color: var(--deepsky);
+}
